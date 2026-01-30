@@ -216,19 +216,21 @@
               </span>
              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-4">
-             <input class="flex-1 px-6 py-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/50 backdrop-blur-sm" placeholder="Ваш email" type="email"/>
-             <button class="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group">
-              Спробувати
-                          безкоштовно
-              <svg class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-               <path d="M5 12h14">
-               </path>
-               <path d="m12 5 7 7-7 7">
-               </path>
-              </svg>
-             </button>
-            </div>
+         <div class="flex flex-col sm:flex-row gap-4 justify-center">
+  <button 
+    onclick="window.parent.postMessage(
+      JSON.stringify({ action: 'open-register' }),
+      'https://krok-platform.vercel.app/'  // ← ТОЧНО вказуй домен твого React-сайту!
+    )"
+    class="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group"
+  >
+    Спробувати безкоштовно
+    <svg class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M5 12h14"></path>
+      <path d="m12 5 7 7-7 7"></path>
+    </svg>
+  </button>
+</div>
             <p class="mt-4 text-sm text-gray-500">
              Безкоштовний доступ. Без кредитної картки.
             </p>
@@ -3363,6 +3365,7 @@
   </noscript>
  </body>
 </html>
+
 
 
 
