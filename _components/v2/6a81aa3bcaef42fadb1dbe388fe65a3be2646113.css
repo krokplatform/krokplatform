@@ -8,15 +8,4 @@ style_tag.string = """
   box-decoration-break: clone;
 }
 """
-.table-responsive-wrapper {
-  width: 100%;
-  overflow-x: auto;               /* головне! */
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;          /* firefox */
-}
 
-/* або напряму на таблицю */
-table {
-  min-width: 600px;               /* або скільки потрібно */
-  width: max-content;
-}
